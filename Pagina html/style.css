@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #FCFBFD;
+    
+}
+header{
+  width: 100%;
+  padding: 15px 8%;
+  box-shadow: 0px 0px 8px #464646;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto no centro verticalmente */
+    cursor: pointer;
+}
+#logo-container img {
+    height: 25px; /* Ajuste a altura da logo conforme necessário */
+    width: 25px; /* Mantém as proporções da logo */
+    margin-right: 8px;
+}
+#navbar {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Faz a nav ficar fixa no topo */
+    position: fixed;  /* Fixa a barra de navegação */
+    top: 0;  /* Garante que a nav fique no topo */
+    left: 0;  /* Alinha a nav à esquerda */
+    width: 100%;  /* A nav ocupará toda a largura */
+    z-index: 10;  /* Garante que a nav ficará acima de outros elementos */
+    background-color: white;  /* Cor de fundo da navegação */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra suave para destacar */
+    padding: 15px 8%;
+}
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.nav-item a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #797979; /* Cor inicial do texto */
+    font-size: 1rem; /* Tamanho inicial da fonte */
+    display: inline-block; /* Necessário para aplicar a transformação corretamente */
+    transition: color 0.2s ease, font-size 0.2s ease, transform 0.2s ease; /* Transição suave de cor, tamanho e escala */
+}
+
+.nav-item:hover a {
+    color: #5D51C3; /* Cor do texto ao passar o mouse */
+    font-size: 1rem; /* Aumenta o tamanho do texto */
+    transform: scale(1.03); /* Aumenta o tamanho do link */
+}
+
+
+.btn-login {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo comum para os botões */
+.btn-login button {
+    all: unset;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px; /* Largura fixa para os botões */
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    border: 2px solid transparent; /* Borda invisível inicial */
+    background: transparent; /* Fundo transparente */
+}
+
+/* Link dentro do botão */
+.btn-login button a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do botão */
+}
+
+/* Estilo para o botão de cadastro */
+.btn-login .cadastre {
+    background-color: #5D51C3; /* Fundo roxo */
+    color: white;
+}
+
+/* Estilo de hover do botão de cadastro */
+.btn-login .cadastre:hover {
+    background-color: #fff; /* Fundo branco */
+    border-color: #5D51C3; /* Borda roxa */
+}
+
+.btn-login .cadastre:hover a {
+    color: #5D51C3; /* Texto roxo no hover */
+}
+
+/* Estilo para o botão de login */
+.btn-login .login a {
+    color: #797979; /* Texto cinza para o botão de login */
+    font-size: 1rem;
+    
+    display: inline-block; /* Necessário para aplicar a transformação corretamente */
+    transition: color 0.2s ease, font-size 0.2s ease, transform 0.2s ease; /* Transição suave de cor, tamanho e escala */
+}
+
+/* Estilo de hover do botão de login */
+.btn-login .login:hover a {
+    color: #5D51C3; /* Texto roxo no hover */
+    transform: scale(1.03)
+}
+
+.ilustration {
+    margin-left: 60px;
+    margin-top: 60px;
+    width: 760px;
+    height: 859px;
+    overflow: hidden;
+}
+.ilustration img{
+   
+    width: 100%;
+    height: auto;
+    
+}
+main {
+    display: flex; /* Cria um layout flexível */
+    gap: 20px; /* Espaço entre os elementos */
+    padding: 20px; /* Espaço interno ao redor do main */
+  
+    
+  }
+.ctp-text {
+    width: 600px;
+    margin-bottom: 50px;
+    margin-top:130px;
+    margin-left: 170px;
+    
+  }
+
+.sub {
+    font-size: 1rem;
+    margin-top: 160px;
+    margin-bottom: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .sub-title {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem; /* Ajuste para o tamanho desejado */
+    line-height: 1.6; /* Espaçamento entre as linhas (opcional, para melhor leitura) */
+  }
+  .title {
+    font-size: 3rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .inp-email {
+    display: inline-flex;
+    
+  }
+  .inp-email input {
+    font-size: 1rem; /* Aumenta o tamanho do texto no campo de input */
+    padding: 12px; /* Espaço interno maior */
+    width: 300px;
+    border-right: none;
+    border: none;
+    background-color: #f1efff;
+    font-size: 1rem;
+    border-radius: 6px 0px 0px 6px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    
+  }
+  
+  .inp-email button {
+    font-size: 1rem; /* Tamanho do texto no botão */
+    padding: 12px 24px; /* Botão mais espaçoso */
+    border-left: none;
+    border: none;
+    width: 100px; /* Largura fixa para os botões */
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid transparent; /* Borda invisível inicial */
+    background: transparent; /* Fundo transparente */
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+    background-color: #5D51C3;
+    color: #f1efff;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    
+  }
+  .inp-email button:hover {
+    border: solid 1px #5D51C3;
+    color: #5D51C3;
+    background-color: white;
+    background-color: transparent
+  }
+.section-container {
+  width:100%;
+  height: 800px;
+  padding: 15px 8%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  
+}
+.why-header {
+  width: 500px;
+  margin-top: 300px;
+  margin-right: 200px;
+}
+.service-header span{
+  background-color: #ECE4F9;
+  border-radius: 5%;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1.8rem;
+  display: inline-flex; /* Permite alinhar o conteúdo de forma flexível */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  align-items: center; /* Alinha verticalmente ao centro */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+  margin-bottom: 15px;
+}
+.service-header span i {
+  font-size: 40px; /* Aumenta o tamanho do ícone */
+  color: #6454D9; /* Cor opcional */
+}
+.service-header p {
+  color: #8d8b9c;
+  margin-top: 10px;
+  
+}
+.section-header {
+  font-size: 3rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.btn-section {
+  all: unset;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px; /* Largura fixa para os botões */
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    border: 2px solid #5D51C3; /* Borda invisível inicial */
+    background: transparent; /* Fundo transparente */
+  margin-top: 30px;
+  transition: background-color 0.4s, color 0.4s, border 0.4s;
+
+}
+.btn-section a{
+  all: unset;
+  font-size: 0.9rem;
+  color: #5D51C3;
+
+}
+.btn-section:hover {
+  background-color: #5D51C3;
+  
+}
+.btn-section:hover a {
+  color: #f1efff;
+}
+
+.service-grid {
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* 3 colunas, você pode ajustar o número de colunas */
+  gap: 30px ; /* Espaçamento entre os cards */
+  margin: auto;
+}
+.card {
+  padding: 30px;
+
+  justify-items: center;
+  box-shadow: #333;
+  border-radius: 3%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+.card:hover{ 
+  transform: translateY(-10px); /* Levanta o card ao passar o mouse */
+}
+.card p {
+  text-align: center;
+  color:#8d8b9c;
+  margin-top: 13px;
+  margin-bottom: 15px;
+     font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem; /* Ajuste para o tamanho desejado */
+    
+}
+.card span {
+  background-color: #ECE4F9;
+  border-radius: 50%;
+  display: block;
+  padding: 15px 15px;
+  font-size: 1.8rem;
+  display: inline-flex; /* Permite alinhar o conteúdo de forma flexível */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  align-items: center; /* Alinha verticalmente ao centro */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+  margin-bottom: 15px;
+}
+.card span i {
+  
+  font-size: 40px; /* Aumenta o tamanho do ícone */
+  color: #6454D9; /* Cor opcional */
+  
+}
+.card a {
+  text-decoration: none;
+  color: #5D51C3;
+}
+.card:hover span i {
+  color: #fff; /* Cor branca no ícone ao passar o mouse */
+}
+.card:hover span {
+  background-color: #5D51C3;
+}
