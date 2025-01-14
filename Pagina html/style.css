@@ -13,9 +13,12 @@ body {
     
 }
 header{
-  width: 100%;
-  padding: 15px 8%;
-  box-shadow: 0px 0px 8px #464646;
+    width: 100%;
+    padding: 15px 8%;
+    box-shadow: 0px 0px 8px #46464623;
+    box-shadow: 0px 0px 8px #46464648;
+    background-color: rgba(255, 255, 255, 0.9); /* Exemplo de fundo claro */
+    position: fixed;
 }
 
 #logo-container {
@@ -29,20 +32,11 @@ header{
     margin-right: 8px;
 }
 #navbar {
-
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed; /* Faz a nav ficar fixa no topo */
-    position: fixed;  /* Fixa a barra de navegação */
-    top: 0;  /* Garante que a nav fique no topo */
-    left: 0;  /* Alinha a nav à esquerda */
-    width: 100%;  /* A nav ocupará toda a largura */
-    z-index: 10;  /* Garante que a nav ficará acima de outros elementos */
-    background-color: white;  /* Cor de fundo da navegação */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra suave para destacar */
-    padding: 15px 8%;
+    
 }
 #nav_list {
     display: flex;
@@ -125,11 +119,14 @@ header{
 }
 
 .ilustration {
+  max-width: 100%; /* Garante que não exceda o tamanho da tela */
+  min-width: 400px; /* Define um tamanho mínimo */
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 100px;
     width: 760px;
     height: 859px;
     overflow: hidden;
+    
 }
 .ilustration img{
    
@@ -141,13 +138,15 @@ main {
     display: flex; /* Cria um layout flexível */
     gap: 20px; /* Espaço entre os elementos */
     padding: 20px; /* Espaço interno ao redor do main */
+    justify-content: center;
   
     
   }
 .ctp-text {
+    margin-top: 250px;
     width: 600px;
     margin-bottom: 50px;
-    margin-top:130px;
+
     margin-left: 170px;
     
   }
@@ -348,3 +347,276 @@ main {
 .card:hover span {
   background-color: #5D51C3;
 }
+second-section {
+  padding: 50px 20px; /* Espaçamento geral */
+  background-color: #f9f9f9; /* Cor de fundo opcional */
+}
+
+.contact-header {
+  text-align: center; /* Centraliza o título e o subtítulo */
+  margin-bottom: 30px; /* Espaço entre o cabeçalho e o conteúdo principal */
+  margin-top: 100px;
+}
+
+.contact-header h4 {
+  font-size: 3rem;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 10px; /* Espaçamento entre o título e o subtítulo */
+}
+
+.contact-header p {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem; /* Ajuste para o tamanho desejado */
+  line-height: 1.6; /* Espaçamento entre as linhas (opcional, para melhor leitura) */
+  font-size: 1rem; /* Subtítulo menor */
+  color: #666; /* Cor cinza para contraste */
+}
+
+.container-ctp{
+
+  display: flex; /* Ativa o layout flexível */
+  margin: auto;
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 20px; /* Espaçamento entre o formulário e a imagem */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    width: auto;
+    margin-bottom: 50px;
+}
+.form-container {
+  margin-left: 8%;
+  margin: auto;
+}
+.form-container2 {
+  
+  width: 800px;
+  background-color: #b2acec; /* Define o fundo desejado */
+  padding: 20px; /* Adiciona espaço interno */
+  height: auto; /* Garante que a altura seja baseada no conteúdo */
+  border-radius: 10px; /* Opcional: cantos arredondados */
+
+}
+
+.sub-form p {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem; /* Ajuste para o tamanho desejado */
+  line-height: 1.6; /* Espaçamento entre as linhas (opcional, para melhor leitura) */
+  font-size: 1rem; /* Subtítulo menor */
+  color: #666; /* Cor cinza para contraste */
+}
+.ilustration-contact {
+
+  margin-right: 8%;
+}
+.form-contact {
+    flex: 1; /* Faz o formulário ocupar o espaço necessário */
+    max-width: 1000px; /* Define uma largura máxima */
+    
+}
+.form-input {
+  width: 100%; /* Campos de entrada ocupam toda a largura */
+  margin-bottom: 15px; /* Espaçamento entre os campos */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5F3F6;
+
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #351864;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.ilustration-contact img{
+  width: 800px;
+  height: auto;
+
+}
+/* Para textarea também */
+ .form-input::placeholder {
+  color: #888;
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+label {
+  color: white;
+}
+
+.form-container h5 {
+  color: white;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+
+}
+.description {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.description label {
+  color: white;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+} 
+footer {
+  background-color: #5D51C3;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* Mantém o footer no fim da página */
+}
+footer p {
+  color: white;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Estilos gerais para dispositivos pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 10px; /* Ajusta o espaço nas bordas */
+  }
+
+  header {
+    padding: 15px 5%;
+  }
+
+  #navbar {
+    flex-direction: column; /* Navegação em coluna */
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #nav_list {
+    flex-direction: column; /* Lista em coluna */
+    gap: 1rem;
+  }
+
+  .btn-login {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    flex-direction: column; /* Organiza os elementos em coluna */
+    padding: 10px;
+  }
+
+  .ctp-text {
+    margin-left: 0;
+    margin-top: 50px;
+    width: 100%; /* Ocupa toda a largura disponível */
+  }
+
+  .ilustration {
+    margin: 0 auto; /* Centraliza a ilustração */
+    width: 100%; /* Ajusta a largura */
+    height: auto;
+  }
+
+  .inp-email {
+    flex-direction: column; /* Organiza o input e botão em coluna */
+    width: 100%;
+  }
+
+  .inp-email input {
+    width: 100%; /* Campo de entrada ocupa toda a largura */
+    border-radius: 6px;
+    margin-bottom: 10px; /* Espaço entre input e botão */
+  }
+
+  .inp-email button {
+    width: 100%; /* Botão ocupa toda a largura */
+    border-radius: 6px;
+  }
+
+  .section-container {
+    flex-direction: column;
+    padding: 10px;
+    height: auto; /* Ajusta altura dinâmica */
+  }
+
+  .why-header {
+    margin: 0 auto;
+    width: 100%; /* Ocupa toda a largura */
+  }
+
+  .service-grid {
+    width: 100%; /* Ajusta a largura do grid */
+    grid-template-columns: 1fr; /* Uma coluna */
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%; /* Ajusta o tamanho do card */
+  }
+
+  .form-container2 {
+    width: 500px; /* Ocupa toda a largura disponível */
+    padding: 15px;
+  }
+
+  .container-ctp {
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .ilustration-contact img {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: auto;
+  }
+
+  .form-input {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+    padding: 8px;
+  }
+
+  footer {
+    height: auto;
+    padding: 10px;
+    text-align: center; /* Centraliza o texto no footer */
+  }
+}
+
+/* Estilos para telas muito pequenas (até 480px) */
+@media screen and (max-width: 480px) {
+  .btn-login button {
+    width: 100%; /* Botões ocupam toda a largura */
+  }
+
+  .sub, .title {
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
+  }
+
+  .section-header {
+    font-size: 2rem; /* Ajusta o tamanho do título */
+  }
+
+  .contact-header h4 {
+    font-size: 2rem; /* Ajusta o tamanho do título */
+  }
+
+  .contact-header p {
+    font-size: 0.9rem; /* Ajusta o tamanho do texto */
+  }
+}
+
